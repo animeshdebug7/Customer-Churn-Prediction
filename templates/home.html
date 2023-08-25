@@ -5,13 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<body>
-    <form action="\result" method="post">
-        Age: <input type="number" name = "Age">  <br />
-        Subscription_Length_Months: <input type="number" name = "Subscription_Length_Months" /> <br />
-        Monthly_Bill: <input type="number" name = "Monthly_Bill">  <br />
-        Total_Usage_GB: <input type="number" name="Total_Usage_GB" /><br />
-        <input type="submit" value="Submit" />
+<body style="background-image: url('static/back.jpg');">
+    <h1>SunBase Data Telecom</h1>
+    <form action="\result" method="post" class = "form">
+        Age <input type="number" name = "Age">  <br />
+        Subscription Length Months <input type="number" name = "Subscription_Length_Months" /> <br />
+        Monthly Bill <input type="number" name = "Monthly_Bill">  <br />
+        Total Usage GB <input type="number" name="Total_Usage_GB" /><br />
+        <input type="submit" value="Submit" id="btn"/>
     </form>
 </body>
+<style>
+
+
+body
+{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: coral;
+    font-family: sans-serif;
+}
+
+.form
+{
+    max-width: 150px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#Age #Subscription_Length_Months #Monthly_Bill #Total_Usage_GB
+{
+    padding: 1rem;
+}
+
+#btn
+{
+    border: 0;
+    background-color: #343050;
+    padding: 1rem;
+    color: coral;
+    margin: 1rem;
+    margin-left: 30%;
+    transition-duration: 0.3s;
+    &:hover
+    {
+        background-color: coral;
+        color: #343050;
+        
+    }
+}
+
+</style>
+
 </html>

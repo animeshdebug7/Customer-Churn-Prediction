@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hello</title>
 </head>
-<body>
+<body style="background-image: url('static/back.jpg');">
     <h1>
-        {{result}}
+        {% if result >= 0.498 %}
+        <a>The Customer will Churn</a>
+        <p>&#128525</p>
+        {% else %}
+        <a>The Customer Won't Churn</a>
+        <p>&#128532</p>
+        {% endif %}
     </h1>
 </body>
+<style>
+
+body
+{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: coral;
+    font-family: sans-serif;
+}
+
+</style>
 </html>
